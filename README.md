@@ -1,11 +1,3 @@
-# Books
-
-Subject-organized library of books and papers.
-
-## File tree
-
-This section is auto-generated from the book files in the repo.
-
 <!-- file-tree:start -->
 ```text
 Books/
@@ -22,23 +14,18 @@ Books/
 │   ├── Monte Carlo methods in financial engineerin-Paul Glasserman-Springer (2004).pdf
 │   ├── Stochastic Calculus for Finance I The Binomial Asset Pricing Model - Shreve.pdf
 │   ├── Stochastic Calculus for Finance II- Continuous-Time Models -Shreve.pdf
-│   └── Toby Crabel - Day Trading With Short Term Price Patterns.pdf
+│   ├── Toby Crabel - Day Trading With Short Term Price Patterns.pdf
+│   └── Trading w the Momo Transformer - An Intelligent Interpretable Architecture - Wood.pdf
 ├── Math-Stats-and-Analytics/
 │   ├── Alex_Reinhart-Statistics_Done_Wrong-EN.pdf
 │   ├── convex_optimization.pdf
 │   ├── Elements of Statistical Learning.pdf
 │   └── Football Analytics with Python & R_ Learning Data Science Through the Lens of Sports.pdf
-├── Chip War - The Fight for the World's Most Critical Technology - Chris Miller.pdf
-├── On the Genealogy of Morals and Ecce Homo-Vintage - Nietzsche.pdf
-└── Trading w the Momo Transformer - An Intelligent Interpretable Architecture - Wood.pdf
+├── Philosophy/
+│   └── On the Genealogy of Morals - Nietzsche.pdf
+└── Chip War - Chris Miller.pdf
 ```
 <!-- file-tree:end -->
-
-## Folder guide
-
-- `Economics`: economics and political economy
-- `Finance-and-Markets`: trading, quant finance, and market microstructure
-- `Math-Stats-and-Analytics`: math, statistics, machine learning, and applied analytics
 
 ## Notes
 
