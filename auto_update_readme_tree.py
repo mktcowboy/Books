@@ -22,7 +22,7 @@ IGNORE_NAMES = {
 START_MARKER = "<!-- file-tree:start -->"
 END_MARKER = "<!-- file-tree:end -->"
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parent
 README_PATH = REPO_ROOT / "README.md"
 
 

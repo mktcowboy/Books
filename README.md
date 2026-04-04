@@ -15,13 +15,13 @@ Books/
 │   └── The Anti-Capitalistic Mentality - LVM.pdf
 ├── Finance-and-Markets/
 │   ├── A Practical Guide to Quant Vol Trading - Bloch 011516.pdf
-│   ├── an analysis of the longstaff-schwartz algorithm for american option pricing.pdf
 │   ├── Analysis of Financial Time Series.pdf
 │   ├── Empirical market structure.pdf
-│   ├── Finding Alphas_ A Quantitative Approach to Building Trading Strategies - Igor Tulchinsky.pdf
+│   ├── Finding Alphas_ A Quant Approach to Building Trading Strategies - Tulchinsky.pdf
+│   ├── Longstaff-schwartz algo for american option pricing.pdf
 │   ├── Monte Carlo methods in financial engineerin-Paul Glasserman-Springer (2004).pdf
-│   ├── Stochastic Calculus for Finance I The Binomial Asset Pricing Model - Steven E. Shreve.pdf
-│   ├── Stochastic Calculus for Finance II- Continuous-Time Models Steven E. Shreve.pdf
+│   ├── Stochastic Calculus for Finance I The Binomial Asset Pricing Model - Shreve.pdf
+│   ├── Stochastic Calculus for Finance II- Continuous-Time Models -Shreve.pdf
 │   └── Toby Crabel - Day Trading With Short Term Price Patterns.pdf
 ├── Math-Stats-and-Analytics/
 │   ├── Alex_Reinhart-Statistics_Done_Wrong-EN.pdf
@@ -42,5 +42,5 @@ Books/
 
 ## Notes
 
-- Run `python3 scripts/update_readme_tree.py` to refresh the tree locally.
+- Run `python3 auto_update_readme_tree.py` to refresh the tree locally.
 - The GitHub Action in `.github/workflows/update-readme-tree.yml` can refresh it automatically on push.

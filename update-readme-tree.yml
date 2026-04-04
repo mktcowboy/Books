@@ -16,7 +16,7 @@ on:
       - "**/*.mobi"
       - "**/*.pdf"
       - "README.md"
-      - "scripts/update_readme_tree.py"
+      - "auto_update_readme_tree.py"
       - ".github/workflows/update-readme-tree.yml"
   workflow_dispatch:
 
@@ -39,7 +39,7 @@ jobs:
           python-version: "3.x"
 
       - name: Regenerate README tree
-        run: python3 scripts/update_readme_tree.py
+        run: python3 auto_update_readme_tree.py
 
       - name: Commit README changes
         run: |
