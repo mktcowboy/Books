@@ -1,6 +1,8 @@
 <!-- file-tree:start -->
 ```text
 Books/
+├── Business and Technology /
+│   └── Chip War - Chris Miller.pdf
 ├── Economics/
 │   ├── Critique of Interventionism - Ludwig Mises.pdf
 │   ├── Mises, Ludwig von - Human Action - A Treatise on Economics.pdf
@@ -21,13 +23,7 @@ Books/
 │   ├── convex_optimization.pdf
 │   ├── Elements of Statistical Learning.pdf
 │   └── Football Analytics with Python & R_ Learning Data Science Through the Lens of Sports.pdf
-├── Philosophy/
-│   └── On the Genealogy of Morals - Nietzsche.pdf
-└── Chip War - Chris Miller.pdf
+└── Philosophy/
+    └── On the Genealogy of Morals - Nietzsche.pdf
 ```
 <!-- file-tree:end -->
-
-## Notes
-
-- Run `python3 auto_update_readme_tree.py` to refresh the tree locally.
-- The GitHub Action in `.github/workflows/update-readme-tree.yml` can refresh it automatically on push.
