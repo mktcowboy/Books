@@ -1,0 +1,55 @@
+name: Update README Tree
+
+on:
+  push:
+    paths:
+      - "*.azw"
+      - "*.azw3"
+      - "*.djvu"
+      - "*.epub"
+      - "*.mobi"
+      - "*.pdf"
+      - "**/*.azw"
+      - "**/*.azw3"
+      - "**/*.djvu"
+      - "**/*.epub"
+      - "**/*.mobi"
+      - "**/*.pdf"
+      - "README.md"
+      - "auto_update_readme_tree.py"
+      - ".github/workflows/update-readme-tree.yml"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Regenerate README tree
+        run: python3 auto_update_readme_tree.py
+
+      - name: Commit README changes
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Auto-update README tree [skip ci]"
+          git push origin HEAD:${GITHUB_REF_NAME}
