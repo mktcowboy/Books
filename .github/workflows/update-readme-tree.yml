@@ -1,27 +1,13 @@
-name: Update README Tree
+name: Update README and File Index
 
 on:
   push:
     paths:
-      - "*.azw"
-      - "*.azw3"
-      - "*.djvu"
-      - "*.epub"
-      - "*.mobi"
-      - "*.pdf"
-      - "**/*.azw"
-      - "**/*.azw3"
-      - "**/*.djvu"
-      - "**/*.epub"
-      - "**/*.mobi"
-      - "**/*.pdf"
-      - "README.md"
-      - "auto_update_readme_tree.py"
-      - ".github/workflows/update-readme-tree.yml"
+      - "**"
   workflow_dispatch:
 
 jobs:
-  update-readme:
+  update-indexes:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     permissions:
@@ -38,18 +24,18 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Regenerate README tree
+      - name: Regenerate README tree and file index
         run: python3 auto_update_readme_tree.py
 
-      - name: Commit README changes
+      - name: Commit generated index changes
         run: |
-          if git diff --quiet -- README.md; then
-            echo "README is already up to date."
+          if git diff --quiet -- README.md FILE_INDEX.md; then
+            echo "Generated indexes are already up to date."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "Auto-update README tree [skip ci]"
+          git add README.md FILE_INDEX.md
+          git commit -m "Auto-update library indexes [skip ci]"
           git push origin HEAD:${GITHUB_REF_NAME}
