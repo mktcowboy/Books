@@ -14,6 +14,11 @@ BOOK_EXTENSIONS = {
     ".mobi",
     ".pdf",
 }
+TREE_EXTENSIONS = BOOK_EXTENSIONS | {
+    ".jpeg",
+    ".jpg",
+    ".png",
+}
 IGNORE_NAMES = {
     ".git",
     ".github",
@@ -25,6 +30,7 @@ IGNORE_NAMES = {
     "__pycache__",
     "scripts",
 }
+TREE_IGNORE_NAMES = IGNORE_NAMES | {"speaches"}
 INDEX_EXTENSIONS = BOOK_EXTENSIONS | {
     ".jpeg",
     ".jpg",
@@ -43,6 +49,10 @@ def is_book_file(path: Path) -> bool:
     return path.is_file() and path.suffix.lower() in BOOK_EXTENSIONS
 
 
+def is_tree_file(path: Path) -> bool:
+    return path.is_file() and path.suffix.lower() in TREE_EXTENSIONS
+
+
 def is_indexed_file(path: Path) -> bool:
     return path.is_file() and path.suffix.lower() in INDEX_EXTENSIONS
 
@@ -50,9 +60,9 @@ def is_indexed_file(path: Path) -> bool:
 @lru_cache(maxsize=None)
 def directory_has_books(directory: Path) -> bool:
     for entry in directory.iterdir():
-        if should_ignore(entry):
+        if should_ignore_tree(entry):
             continue
-        if is_book_file(entry):
+        if is_tree_file(entry):
             return True
         if entry.is_dir() and directory_has_books(entry):
             return True
@@ -63,16 +73,20 @@ def should_ignore(path: Path) -> bool:
     return path.name.startswith(".") or path.name in IGNORE_NAMES
 
 
+def should_ignore_tree(path: Path) -> bool:
+    return path.name.startswith(".") or path.name in TREE_IGNORE_NAMES
+
+
 def included_entries(directory: Path) -> list[Path]:
     directories: list[Path] = []
     files: list[Path] = []
 
     for entry in sorted(directory.iterdir(), key=lambda item: item.name.lower()):
-        if should_ignore(entry):
+        if should_ignore_tree(entry):
             continue
         if entry.is_dir() and directory_has_books(entry):
             directories.append(entry)
-        elif is_book_file(entry):
+        elif is_tree_file(entry):
             files.append(entry)
 
     return directories + files

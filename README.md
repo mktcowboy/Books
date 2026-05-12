@@ -10,17 +10,7 @@ A working library of books, notes, summaries, lectures, speeches, and mind maps.
 - `speaches/` contains speeches and related source material.
 - `FILE_INDEX.md` is a generated index of the library content.
 
-## Updating the indexes
-
-Run the generator after adding, moving, or removing library files:
-
-```bash
-python3 auto_update_readme_tree.py
-```
-
-The script refreshes the README book tree and rewrites `FILE_INDEX.md`. Generated files and automation files are intentionally ignored by the tree.
-
-## Book File Tree
+## Library File Tree
 
 <!-- file-tree:start -->
 ```text
@@ -44,20 +34,52 @@ Books/
 │   ├── The Anti-Capitalistic Mentality - LVM.pdf
 │   ├── Toby Crabel - Day Trading With Short Term Price Patterns.pdf
 │   └── Trading w the Momo Transformer - An Intelligent Interpretable Architecture - Wood.pdf
-└── speaches/
-    └── clarence-thomas-law-review-articles/
-        ├── A_Humble_Justice.pdf
-        ├── At_the_Front_of_the_Train_Justice_Thomas_Reexamines_the_Administrative_State.pdf
-        ├── But_For_the_Grace_Of_God_There_Go_I_Justice_Thomas_And_The_Little_Guy.pdf
-        ├── Confronting_the_Administrative_State.pdf
-        ├── Fisher_v._University_Of_Texas_and_the_Future_of_Affirmative_Action_in_Higher_Education.pdf
-        ├── How_Justice_Thomas_Determines_the_Original_Meaning_of_Article_II_of_the_Constitution.pdf
-        ├── Justice_Thomas_and_the_Originalist_Turn_in_Administrative_Law.pdf
-        ├── Justice_Thomas_Criminal_Justice_and_Originalisms_Legitimacy.pdf
-        ├── No_Entrenchment_Thomas_on_the_Hobbs_Act_the_Ocasio_Mess_and_the_Vagueness_Doctrine.pdf
-        ├── The_Free_Speech_Jurisprudence_of_Clarence_Thomas.pdf
-        ├── The_Jurisprudence_of_Clarence_Thomas.pdf
-        ├── The_Truth_About_Clarence_Thomas_And_The_Need_For_New_Black_Leadership.pdf
-        └── To_Help_Not_To_Hurt_Justice_Thomass_Equality_Canon.pdf
+└── mindmaps/
+    ├── 12 Rules for Life.jpg
+    ├── Antifragile.jpg
+    ├── Atomic Habits.jpg
+    ├── Can't Hurt Me.jpg
+    ├── Deep Work.jpg
+    ├── Do Hard Things.jpg
+    ├── Don't Believe Everything You Think.jpg
+    ├── Good to Great.jpg
+    ├── Grit.jpg
+    ├── How Highly Effective People Speak.jpg
+    ├── How to Fail at Almost Everything and Still Win Big.jpg
+    ├── How to Talk to Anyone About Anything.jpg
+    ├── How to Tell a Story.jpg
+    ├── How to Win Friends and Influence People.jpg
+    ├── Ikigai.jpg
+    ├── Influence- The Psychology of Persuasion.jpg
+    ├── Mastery.jpg
+    ├── Never Split the Difference.jpg
+    ├── Principles.jpg
+    ├── Range.jpg
+    ├── Read People Like a Book.jpg
+    ├── Surrounded by Idiots.jpg
+    ├── The 4-Hour Work Week.jpg
+    ├── The Art of Strategy.jpg
+    ├── The Art of Thinking Clearly.jpg
+    ├── The Art of War.jpg
+    ├── The Black Swan.jpg
+    ├── The Compound Effect.jpg
+    ├── The Courage to Be Disliked.jpg
+    ├── The First 90 Days.jpg
+    ├── The Intelligent Investor.jpg
+    ├── The Mountain Is You- Transforming Self-Sabotage Into Self-Mastery.jpg
+    ├── The Psychology of Money.jpg
+    ├── The Science of Rapid Skill Acquisition.jpg
+    ├── The Subtle Art of Not Giving a Fck.jpg
+    ├── The Sweaty Startup.jpg
+    ├── Think Again.jpg
+    ├── Think Faster, Talk Smarter.jpg
+    ├── Thinking in Systems.jpg
+    ├── Thinking, Fast and Slow.jpg
+    ├── Trump- The Art of the Deal.jpg
+    ├── Unlimited Memory.jpg
+    ├── Why Nations Fail.jpg
+    ├── Your Best Year Ever.jpg
+    ├── Your Next Five Moves.jpg
+    └── Zero to One.jpg
 ```
 <!-- file-tree:end -->
