@@ -256,7 +256,7 @@ By type: 46 .jpg, 260 .md, 31 .pdf
 - [The Daily Stoic - Ryan Holiday.md](summaries/Mindset%20%26%20Self-Mastery/The%20Daily%20Stoic%20-%20Ryan%20Holiday.md)
 - [The Four Agreements - Don Miguel Ruiz.md](summaries/Mindset%20%26%20Self-Mastery/The%20Four%20Agreements%20-%20Don%20Miguel%20Ruiz.md)
 - [The Road to Character - David Brooks.md](summaries/Mindset%20%26%20Self-Mastery/The%20Road%20to%20Character%20-%20David%20Brooks.md)
-- [The Subtle Art of Not Giving a F-ck - Mark Manson.md](summaries/Mindset%20%26%20Self-Mastery/The%20Subtle%20Art%20of%20Not%20Giving%20a%20F-ck%20-%20Mark%20Manson.md)
+- [The Subtle Art of Not Giving a Fvck - Mark Manson.md](summaries/Mindset%20%26%20Self-Mastery/The%20Subtle%20Art%20of%20Not%20Giving%20a%20Fvck%20-%20Mark%20Manson.md)
 
 ### summaries/Parenting & Child Development
 
