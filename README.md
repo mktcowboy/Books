@@ -20,7 +20,6 @@ Books/
 │   ├── Advanced marathoning.pdf
 │   ├── Alex_Reinhart-Statistics_Done_Wrong-EN.pdf
 │   ├── Analysis of Financial Time Series.pdf
-│   ├── Andrew Mack, Euan Sinclair - Retail Options Trading (2024).pdf
 │   ├── convex_optimization.pdf
 │   ├── Critique of Interventionism - Ludwig Mises.pdf
 │   ├── David Sklansky - Getting the Best of It.pdf
