@@ -17,15 +17,19 @@ A working library of books, notes, summaries, lectures, speeches, and mind maps.
 Books/
 ├── books/
 │   ├── A Practical Guide to Quant Vol Trading - Bloch 011516.pdf
+│   ├── Advanced marathoning.pdf
 │   ├── Alex_Reinhart-Statistics_Done_Wrong-EN.pdf
 │   ├── Analysis of Financial Time Series.pdf
+│   ├── Andrew Mack, Euan Sinclair - Retail Options Trading (2024).pdf
 │   ├── convex_optimization.pdf
 │   ├── Critique of Interventionism - Ludwig Mises.pdf
+│   ├── David Sklansky - Getting the Best of It.pdf
 │   ├── Elements of Statistical Learning.pdf
 │   ├── Empirical market structure.pdf
+│   ├── Facebook's Little Red Book Remastered.pdf
 │   ├── Finding Alphas_ A Quant Approach to Building Trading Strategies - Tulchinsky.pdf
 │   ├── Football Analytics with Python & R_ Learning Data Science Through the Lens of Sports.pdf
-│   ├── Longstaff-schwartz algo for american option pricing.pdf
+│   ├── Howard Marks Oak Tree - Complete Collection.pdf
 │   ├── Mises, Ludwig von - Human Action - A Treatise on Economics.pdf
 │   ├── Monte Carlo methods in financial engineerin-Paul Glasserman-Springer (2004).pdf
 │   ├── On the Genealogy of Morals - Nietzsche.pdf

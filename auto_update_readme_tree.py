@@ -174,7 +174,7 @@ def render_file_index(root: Path) -> str:
 
 
 def update_readme() -> None:
-    readme = README_PATH.read_text()
+    readme = README_PATH.read_text(encoding="utf-8")
     if START_MARKER not in readme or END_MARKER not in readme:
         raise RuntimeError("README.md is missing tree markers.")
 
@@ -182,11 +182,11 @@ def update_readme() -> None:
     end_index = readme.index(END_MARKER)
     tree_block = f"\n```text\n{render_tree(REPO_ROOT)}\n```\n"
     updated = f"{readme[:start_index]}{tree_block}{readme[end_index:]}"
-    README_PATH.write_text(updated)
+    README_PATH.write_text(updated, encoding="utf-8")
 
 
 def update_file_index() -> None:
-    FILE_INDEX_PATH.write_text(render_file_index(REPO_ROOT))
+    FILE_INDEX_PATH.write_text(render_file_index(REPO_ROOT), encoding="utf-8")
 
 
 if __name__ == "__main__":
