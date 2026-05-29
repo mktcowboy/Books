@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import datetime
+import re
 from functools import lru_cache
 from pathlib import Path
 from urllib.parse import quote
@@ -182,6 +184,14 @@ def update_readme() -> None:
     end_index = readme.index(END_MARKER)
     tree_block = f"\n```text\n{render_tree(REPO_ROOT)}\n```\n"
     updated = f"{readme[:start_index]}{tree_block}{readme[end_index:]}"
+
+    today = datetime.date.today().isoformat()
+    updated = re.sub(
+        r"\*\*Last updated:\*\*\s*\S+",
+        f"**Last updated:** {today}",
+        updated,
+    )
+
     README_PATH.write_text(updated, encoding="utf-8")
 
 

@@ -2,6 +2,8 @@
 
 A working library of books, notes, summaries, lectures, speeches, and mind maps.
 
+**Last updated:** 2026-05-28
+
 ## What is here
 
 - `summaries/` contains markdown notes organized by topic.

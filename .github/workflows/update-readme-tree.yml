@@ -3,7 +3,10 @@ name: Update README and File Index
 on:
   push:
     paths:
-      - "**"
+      - "books/**"
+      - "mindmaps/**"
+      - "summaries/**"
+      - "speaches/**"
   workflow_dispatch:
 
 jobs:
