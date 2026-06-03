@@ -2,7 +2,7 @@
 
 A working library of books, notes, summaries, lectures, speeches, and mind maps.
 
-**Last updated:** 2026-05-28
+**Last updated:** 2026-06-03
 
 ## What is here
 
